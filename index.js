@@ -4,9 +4,11 @@ const PORT = process.env.PORT || 3000
 
 //mongodb://tygrys123:tygrys123@ds235078.mlab.com:35078/tigerserv_nas
 app = express()
+require('dotenv/config')
+
 
 //conect to DB use mongoose
-mongoose.connect('mongodb://tygrys123:tygrys123@ds235078.mlab.com:35078/tigerserv_nas',{useNewUrlParser: true},() => {
+mongoose.connect(process.env.DB_CONNECTION,{useNewUrlParser: true},() => {
     console.log('Connected To Database!')
 })
 
