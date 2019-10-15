@@ -1,12 +1,17 @@
 const mongoose = require('mongoose');
 
+
 const Todo = mongoose.Schema({
     title: {
         type: String,
         required: true
     },
-    date: Date.now,
-    body: {
+    date: {
+        type: Date,
+        default: Date.now()
+    },
+
+    text: {
         type: String,
         required: true
     },
