@@ -33,5 +33,13 @@ app.post('/addtodo',async (req, res)=> {
         res.json({message: err})
     }
 })
+//delete todos
+app.delete('/deletetodo:id', async (req, res)=>{
+    try{
+    const removedTodo = await Todo.remove({_id: req.params.id})
+    }catch(err){
+        res.json({message: err})
+    }
+})
 
 app.listen(PORT, ()=> console.log(`Server start on port: ${PORT}`))
