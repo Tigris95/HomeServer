@@ -1,0 +1,15 @@
+{
+  "name": "ProjectTigris",
+  "version": "1.0.0",
+  "description": "Home server for Synology NAS",
+  "main": "index.js",
+  "repository": "https://github.com/Tigris95/HomeServer.git",
+  "author": "Tigris95 <tigrisgithub95@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.3"
+  }
+}
