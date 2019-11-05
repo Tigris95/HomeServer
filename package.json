@@ -3,14 +3,19 @@
   "version": "1.0.0",
   "description": "Home server for Synology NAS",
   "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"nodemon\" \"./client/yarn sass\" \" ./client/yarn start\""
+  },
   "repository": "https://github.com/Tigris95/HomeServer.git",
   "author": "Tigris95 <tigrisgithub95@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "concurrently": "^5.0.0",
     "cors": "^2.8.5",
     "dotenv": "^8.1.0",
     "express": "^4.17.1",
-    "mongoose": "^5.7.5"
+    "moment": "^2.24.0",
+    "mongoose": "^5.7.7"
   },
   "devDependencies": {
     "nodemon": "^1.19.3"

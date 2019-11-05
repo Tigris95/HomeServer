@@ -1,7 +1,10 @@
-const mongoose = require('mongoose');
-
+const mongoose = require('mongoose')
 
 const Todo = mongoose.Schema({
+    _id:{
+        type: String,
+        require: true
+    },
     title: {
         type: String,
         required: true
